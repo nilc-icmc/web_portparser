@@ -5,11 +5,6 @@ This is part of the POeTiSA project, a project from the Natural Language Process
 
 ![image](https://github.com/anasampa/web_portparser/assets/36799215/ce6ddf2d-3905-477d-8e87-94ea5e81cccf)
 
-![image](https://github.com/anasampa/web_portparser/assets/36799215/220e450f-7505-477a-bc2e-42eba69f6d05)
-
-![image](https://github.com/anasampa/web_portparser/assets/36799215/3b829355-fe99-4cac-a8bf-5d3192ea59a1)
-
-
 The web parser make use of the parser code of <a href='https://github.com/ufal/udpipe'>UDPipe2</a> to run Portaparser (Portparser model was trained in it), the <a href='https://github.com/ufal/wembedding_service'>wembedding_service</a> to generate embeddings for the model, and <a href='https://github.com/Arborator/arborator-draft'>arborator</a> to provide the visualization of the dependency trees.  
 In order to prevent possible pipeline breaks due to changes in the original codes, we incorporate and adapt part of the code from the original tools in this project. Please check the license from the original repositories of each one before making use of it.  
 
