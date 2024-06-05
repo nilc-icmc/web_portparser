@@ -1,5 +1,3 @@
-![image](https://github.com/anasampa/web_portparser/assets/36799215/ce6ddf2d-3905-477d-8e87-94ea5e81cccf)
-
 # Web Parser Portparser
 We develop this project to provide an interactive online parser for Brazilian Portuguese that follows the <a href='https://universaldependencies.org/'>Universal Dependencies (UD)</a> framework running a specific trained model, <a href='https://github.com/LuceleneL/Portparser'>Portaparser</a>. You can access the web parser <a href='http://200.144.192.75:8082/'>here<a>.</a>
 
@@ -11,7 +9,7 @@ In order to prevent possible pipeline breaks due to changes in the original code
 Portaparser model was trained in the recently released manually annotated corpus, the Porttinari-base. This trained model is the result of the best combination achieved in experiments that tested different parsing methods, hiperparameters and embedding models. For more details about it see <a href='https://aclanthology.org/2024.propor-1.41/'>Lopes and Pardo (2024)</a>.
 
 
-<div style='text-align: center;'>![image](https://github.com/anasampa/web_portparser/assets/36799215/ce6ddf2d-3905-477d-8e87-94ea5e81cccf)</div>
+<p style="text-align: center;">![image](https://github.com/anasampa/web_portparser/assets/36799215/ce6ddf2d-3905-477d-8e87-94ea5e81cccf)</p>
 
 ![image](https://github.com/anasampa/web_portparser/assets/36799215/d0af3d07-c2fa-4d14-8f48-78124db6f516)
 
