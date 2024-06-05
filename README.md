@@ -1,5 +1,5 @@
 # Web Parser Portparser
-We developed this project to provide an interactive online parser for Brazilian Portuguese that follows the <a href='https://universaldependencies.org/'>Universal Dependencies (UD)</a> framework running a specific trained model, <a href='https://github.com/LuceleneL/Portparser'>Portaparser</a>. You can access the web parser <a href='http://200.144.192.75:8082/'>here<a>.</a>
+We developed this project to provide an interactive online parser for Brazilian Portuguese that follows the <a href='https://universaldependencies.org/'>Universal Dependencies (UD)</a> framework running a specific trained model, <a href='https://github.com/LuceleneL/Portparser'>Portaparser</a>. You can access the web parser page <a href='http://200.144.192.75:8082/'>here<a>.</a>
 
 This work is part of the POeTiSA project, a project from the Natural Language Processing initiative (NLP2) of the <a href='https://c4ai.inova.usp.br/'>Center for Artificial Intelligence (C4AI)</a> of the <a href='https://www5.usp.br/'>University of São Paulo</a>.
 
@@ -11,6 +11,9 @@ The Portaparser model was trained in the recently released manually annotated co
 ![image](https://github.com/anasampa/web_portparser/assets/36799215/ce6ddf2d-3905-477d-8e87-94ea5e81cccf)
 
 ![image](https://github.com/anasampa/web_portparser/assets/36799215/d0af3d07-c2fa-4d14-8f48-78124db6f516)
+
+## Acknowledgement 
+We would like to thank the São Paulo Research Foundation (FAPESP) for the support. 
 
 
 
