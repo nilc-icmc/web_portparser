@@ -13,7 +13,7 @@ The Portaparser model was trained in the recently released manually annotated co
 ![image](https://github.com/anasampa/web_portparser/assets/36799215/d0af3d07-c2fa-4d14-8f48-78124db6f516)
 
 ## Acknowledgement 
-We would like to thank the São Paulo Research Foundation (FAPESP) for the support. 
+We would like to thank the São Paulo Research Foundation (FAPESP) for the finantial support of this work. 
 
 
 
