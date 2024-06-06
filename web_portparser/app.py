@@ -8,7 +8,7 @@ import pandas as pd
 #-----Initial Parameters----
 
 # Must be always False in production. When DEBUG is set to True the interface do not call the parser. Mode to debug interface features in local development.   
-DEBUG=True
+DEBUG=False
 # Embedding model. Options are: 'bert-base-portuguese-cased' or 'bert-base-multilingual-uncased'
 MODEL='bert-base-portuguese-cased'
 
