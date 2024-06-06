@@ -1,0 +1,9 @@
+# newdoc id = .\arquivos_para_teste\arquivo_teste.conllu
+# newpar
+# sent_id = S0002
+# text = Maria gosta de comer banana.
+1	Maria	Maria	PROPN	_	_	2	nsubj	_	_
+2	gosta	gostar	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	de	de	ADP	_	_	4	mark	_	_
+4	comer	comer	VERB	_	VerbForm=Inf	2	xcomp	_	_
+5	banana.	banana.	NOUN	_	Number=Sing	4	obj	_	_
