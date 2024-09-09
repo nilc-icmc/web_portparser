@@ -120,7 +120,7 @@ def stripSents(inputText, outfile, limit, replace):
         return abbr
     # the function stripSents main body
     abbrev = []
-    infile = open("portSentencer/abbrev.txt", "r")
+    infile = open("abbrev.txt", "r")
     for line in infile:
         abbrev.append(line[:-1])
     infile.close()
@@ -139,9 +139,13 @@ def stripSents(inputText, outfile, limit, replace):
                         ["\n", " "], ["\t", " "]]
     else:
         replaceables = [["\n", " "], ["\t", " "]]
-    tmp = inputText.replace("  "," ").replace("  "," ")
+    tmp = inputText.replace("  "," ")
     for r in replaceables:
         tmp = tmp.replace(r[0], r[1])
+    while (tmp.find("  ") != -1):
+        tmp = tmp.replace("  "," ")
+    if (tmp[0] == " "):
+        tmp = tmp[1:]
     bagOfChunks = tmp.split(" ")
     s, sent = 0, ""
     if (bagOfChunks[-1] == ""):
@@ -160,6 +164,12 @@ def stripSents(inputText, outfile, limit, replace):
         elif (limit != 0) and (len(sent) + len(chunk) > limit):
             s += cleanPrint(sent[1:], outfile)
             sent = chunk
+        # if the chunk is too short
+        elif (len(chunk) < 3) and (len(chunk) != 0):
+            sent += " " + chunk
+        # if the chunk is empty
+        elif (len(chunk) == 0):
+            continue
         # ! ? or ... always mark an end of sentence
         elif (chunk[-3:] == "...") or (chunk[-1] == "!") or (chunk[-1] == "?"):
             sent += " " + chunk
@@ -204,7 +214,7 @@ def stripSents(inputText, outfile, limit, replace):
 #################################################
 def portSent():
     if (len(sys.argv) == 1):
-        arguments = ["sents.txt", ["text1.txt"], 0, True]
+        arguments = ["sents2.txt", ["Teste_Reli.txt"], 0, True]
         print("Assumindo default: 'sents.txt' como arquivo de saída, 'text1.txt' como arquivo de entrada, sem limite e substituições.")
     else:
         arguments = parseOptions(sys.argv)
