@@ -28,7 +28,7 @@ def img_to_html(img_path, img_style='max-width: 100%;'):
 # Call parser steps
 def make_conllu(path_text, path_input):
     try:
-        os.system(f'python portTokenizer/portTok.py -o {path_input} -m -t -s S0000 {path_text}')
+        os.system(f'python portTokenizer/portTok.py -o {path_input} -m -s S0000 {path_text}')
         return 'Converti o texto para conllu.'       
     except Exception as e:
         return str(e)
